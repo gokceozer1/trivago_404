@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.one {
+  background-image: url("../src/img/london.jpeg");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-size: cover;
+  background-size: contain;
+  background-size: cover;
+}
+.two {
+  background-image: url("../src/img/amsterdam4.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-size: cover;
+}
+.three {
+  background-image: url("../src/img/istanbul2.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-size: cover;
+}
+.four {
+  background-image: url("../src/img/hongkong.jpeg");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-size: cover;
+}
